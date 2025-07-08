@@ -1,4 +1,4 @@
-#UE5 Pixelization/Dithering PostProcess
+# UE5 Pixelization/Dithering PostProcess
 Unreal Engine 5 Plugin for pixelization / dithering / reduced pallete
 
 This plugin allows you to add old-school pixelated style to your Unreal Engine project. 
