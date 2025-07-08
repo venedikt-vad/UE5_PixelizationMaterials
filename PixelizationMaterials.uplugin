@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.2",
+	"FriendlyName": "PixelizationMaterials",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "v-vad",
+	"CreatedByURL": "https://v-vad.ru",
+	"DocsURL": "",
+	"MarketplaceURL": "https://venediktvad.itch.io/ue5-pixelizationdithering-postprocess",
+	"SupportURL": "",
+	"EngineVersion": "5.5.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "PixelizationMaterials",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen"
+		}
+	]
+}
