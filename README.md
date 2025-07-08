@@ -5,3 +5,5 @@ This plugin allows you to add old-school pixelated style to your Unreal Engine p
 Plugin adds post process material with next features: Pixelization, Reduced color palette, Custom color palette, Dithering, Different dithering patterns, Partial pixelization.
 
 https://youtu.be/g4vheV6iv_w?si=eBmYgtOtw-mkUPmQ
+
+https://venediktvad.itch.io/ue5-pixelizationdithering-postprocess
