@@ -11,7 +11,7 @@ Plugin adds post process material with next features: Pixelization, Reduced colo
   <summary>How to install</summary>
   
   1. Download plugin from [releases](https://github.com/venedikt-vad/UE5_PixelizationMaterials/releases) or from [itch.io](https://venediktvad.itch.io/ue5-pixelizationdithering-postprocess)
-  2. Extract archive and place in your prroject's Plugins directory. `YourProject\Plugins\PixelizationMaterials`
+  2. Extract archive and place in your prroject's Plugins directory. `YourProject\Plugins\PixelizationMaterials` (make sure you don't create additional subdirectories when extracting)
   3. If your UnrealEngine version differs from one that plugin was build for, you may need to rebuild your project from visual studio.
 </details>
 
