@@ -24,3 +24,30 @@ Plugin adds post process material with next features: Pixelization, Reduced colo
   4. Apply your instance to post process volume by adding it to `Post Process Materials` array <img width="974" height="766" alt="image" src="https://github.com/user-attachments/assets/7e02f653-c7c0-48b0-8ae8-5304e0dc91ac" />
 
 </details>
+
+<details>
+  <summary>Material Parameters</summary>
+
+  | Name                    | Description           |  Example |
+  |-------------------------|-----------------------|----------|
+  | -**Blur**-              |                       |    |
+  | BlurAmount              |                       |         |
+  | UseBlur                 |                       |         |
+  | -**ColorSpace**-        |                           |          |
+  | EnableRedusedColorSpace |       |                             |
+  | CustomPalette           |         |    |
+  | DitherColorLUT          |        |    |
+  | -**Dithering**-         |  |        |
+  | UseDithering            | |         |
+  | DitherPattern           |  |        |
+  | Pattern Steps           |   |      |
+  | Pattern Width           |   |     |
+  | InvertDithering         |  |       |
+  | DitherAmount            |   |         |
+  | -**Pixelization**-      |         | |
+  | PixelInPeercents        |         | |
+  | TrianglePixels          |        |  |
+  | PixelAmount             |        |  |
+  | X-Stretch               |        |  |
+  | Y-Stretch               |        |  |
+</details>
