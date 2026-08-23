@@ -267,27 +267,27 @@ FVector UPixelizationMaterialsBPLibrary::sRGBToXYZcolor(FColor color) {
 
 FVector UPixelizationMaterialsBPLibrary::XYZcolorToCIELUV(FVector XYZcolor) {
     //ReferenceX, Y and Z refer to specific illuminants and observers.
-    const float ReferenceX = 95.047;
-    const float ReferenceY = 100.000;
-    const float ReferenceZ = 108.883;
+    const float ReferenceX = 95.047f;
+    const float ReferenceY = 100.000f;
+    const float ReferenceZ = 108.883f;
 
     float X = XYZcolor.X;
     float Y = XYZcolor.Y;
     float Z = XYZcolor.Z;
 
-    float var_U = (4. * X) / (X + (15. * Y) + (3. * Z));
-    float var_V = (9. * Y) / (X + (15. * Y) + (3. * Z));
+    float var_U = (4.f * X) / (X + (15.f * Y) + (3.f * Z));
+    float var_V = (9.f * Y) / (X + (15.f * Y) + (3.f * Z));
 
-    float var_Y = Y / 100.;
+    float var_Y = Y / 100.f;
     if (var_Y > 0.008856) var_Y = pow(var_Y, (1. / 3.));
-    else                  var_Y = (7.787 * var_Y) + (16. / 116.);
+    else                  var_Y = (7.787f * var_Y) + (16.f / 116.f);
 
-    float ref_U = (4. * ReferenceX) / (ReferenceX + (15. * ReferenceY) + (3. * ReferenceZ));
-    float ref_V = (9. * ReferenceY) / (ReferenceX + (15. * ReferenceY) + (3. * ReferenceZ));
+    float ref_U = (4.f * ReferenceX) / (ReferenceX + (15.f * ReferenceY) + (3.f * ReferenceZ));
+    float ref_V = (9.f * ReferenceY) / (ReferenceX + (15.f * ReferenceY) + (3.f * ReferenceZ));
 
-    float CIE_L = (116. * var_Y) - 16.;
-    float CIE_u = 13. * CIE_L * (var_U - ref_U);
-    float CIE_v = 13. * CIE_L * (var_V - ref_V);
+    float CIE_L = (116.f * var_Y) - 16.f;
+    float CIE_u = 13.f * CIE_L * (var_U - ref_U);
+    float CIE_v = 13.f * CIE_L * (var_V - ref_V);
 
     return FVector(CIE_L, CIE_u, CIE_v);
 }
@@ -298,9 +298,9 @@ FVector UPixelizationMaterialsBPLibrary::sRGBToCIELUV(FColor color) {
 
 FVector UPixelizationMaterialsBPLibrary::CIELUVToXYZcolor(FVector CIELUV) {
     //Reference-X, Y and Z refer to specific illuminants and observers.
-    const float ReferenceX = 95.047;
-    const float ReferenceY = 100.000;
-    const float ReferenceZ = 108.883;
+    const float ReferenceX = 95.047f;
+    const float ReferenceY = 100.000f;
+    const float ReferenceZ = 108.883f;
 
     float CIE_L = CIELUV.X;
     float CIE_u = CIELUV.Y;
